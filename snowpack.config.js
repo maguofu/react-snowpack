@@ -10,6 +10,7 @@ module.exports = {
   plugins: [
     /* ... */
     '@snowpack/plugin-react-refresh',
+    '@snowpack/plugin-webpack',
   ],
   proxy: {
     '/omsdata': {
@@ -19,7 +20,9 @@ module.exports = {
   },
   optimize: {
     /* Example: Bundle your final build: */
-    // "bundle": true,
+    bundle: true,
+    // minify: true,
+    // target: 'es2018',
   },
   packageOptions: {
     /* ... */
